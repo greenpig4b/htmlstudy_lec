@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse : collapse;
+            border-spacing : 0;
+            border: 2px solid red;
+        }
+        
+        table th,td{
+            padding: 8px;
+            border-right: 1px solid #000;
+        }
+        table th{
+            color: red;
+            
+        }
+        table td{
+            text-align: center;
+        
+        }
+        table tr{
+            border-bottom: 1px solid #000;
+        }
+      
+        table tr:nth-child(3) td{
+            border-bottom: none;
+        }
+        table tr td:last-child{
+            border-right: 2px solid red;
+            
+        }
+        table td.head{
+            border: none;
+            background: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col width="20%">
+            <col width="20%">
+            <col width="20%">
+            <col width="20%">
+            <col width="20%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>날짜</th>
+                <th>방송사</th>
+                <th>방송명</th>
+                <th>역할</th>
+                <th>비고</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="5" class="head">2018년</td>
+            </tr>
+            <tr>
+                <td>11월 19일</td>
+                <td>KBS</td>
+                <td><a href="#">대국민 토스쿄 안녕하세요</a></td>
+                <td>게스트</td>
+                <td>389회</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="head">2020년</td>
+            </tr>
+            <tr>
+                <td>1월1일</td>
+                <td>MBC</td>
+                <td><a href="#">라디오 스타</a></td>
+                <td>게스트</td>
+                <td>650회</td>
+            </tr>
+            <tr>
+                <td>1월20일</td>
+                <td>KBS</td>
+                <td><a href="#">더 드리머</a></td>
+                <td>게스트</td>
+                <td>1회</td>
+            </tr>
+            <tr>
+                <td>9월 30일</td>
+                <td><img src="#" alt="TVn"></td>
+                <td><a href="#">유 퀴즈 온 더 블럭</a></td>
+                <td>게스트</td>
+                <td>224회</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="head">2023년</td>
+            </tr>
+            <tr>
+                <td>12월 20일</td>
+                <td>TVN</td>
+                <td><a href="#">유 퀴즈 온 더 블럭</a></td>
+                <td>게스트</td>
+                <td>224회</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="head">2024년</td>
+            </tr>
+            <tr>
+                <td>1월27일</td>
+                <td>JTBC</td>
+                <td><a href="#">아는형님</a></td>
+                <td>게스트</td>
+                <td>418회</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
