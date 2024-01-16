@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0 auto;
+}
+
+
+
+.main {
+    padding: 100px 20px;
+    background: #f8f8f8;
+}
+
+h1 {}
+
+.meal-container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-gap: 25px;
+    margin: 50px 0;
+}
+
+.meal-item {
+    text-align: center;
+}
+
+.meal-item .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.meal-item .circle {}
+
+.meal-item p {
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+
+h5 {
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-gap: 50px;
+    margin-bottom: 50px;
+}
+
+.images-container .images-item {
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    height: 200px;
+    width: 100%;
+    background-image: url(/icon/images/meal1.png);
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.images-container .images-item:nth-child(2) {
+    background-image: url(/icon/images/meal2.png);
+}
+
+.images-container .images-item:nth-child(3) {
+    background-image: url(/icon/images/meal3.png);
+}
+
+.images-container .images-item:nth-child(4) {
+    background-image: url(/icon/images/meal4.png);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+ul li span.icon {
+    border: 3px solid #ddd;
+    border-radius: 5px;
+}
