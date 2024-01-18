@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+body {
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.main {}
+
+.layer-top {
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    background: #e3e3e3;
+    position: relative;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.icon-box {}
+
+.icon-box .icon-cont {
+    display: inline;
+    background: red;
+}
+
+.nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+
+}
+
+.nav ul li {
+    text-align: right;
+}
+
+.reservation {
+    position: absolute;
+    width: 450px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    left: 60px;
+    top: 100px;
+}
+
+
+.reservation h2 {
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.reserve-table {
+    width: 100%;
+}
+
+.reserve-table tbody {}
+
+.reserve-table tbody tr {
+    display: grid;
+}
+
+.reserve-table tbody tr td.half {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.reserve-table tbody tr td {}
+
+.reserve-table tbody tr td .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.reserve-table tbody tr td .input-wrapper label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.reserve-table tbody tr td .input-wrapper input {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+}
+
+.reserve-table tbody tr td .input-wrapper select {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+}
+
+.reserve-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.reserve-btn button {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #FF5A5F;
+    color: #fff;
+    cursor: pointer;
+}
